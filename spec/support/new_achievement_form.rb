@@ -9,7 +9,6 @@ class NewAchievementForm
   end
 
   def fill_in_with(params = {})
-    byebug
     fill_in('Title', with: params.fetch(:title, 'Default title'))
     fill_in('Description', with: params.fetch(:description, 'Default description'))
     select('Public', from: 'Privacy')

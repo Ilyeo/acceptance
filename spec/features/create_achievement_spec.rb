@@ -11,7 +11,7 @@ feature 'create new achievement' do
     ).submit
 
     expect(page).to have_content('Achievement has been created')
-    expect(Achievement.last.title).to eq('Read a book')
+    expect(Achievement.last.title).to eq('Game of thrones')
   end
 
   scenario 'cannot create achievement with invalid data' do

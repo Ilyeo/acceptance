@@ -34,6 +34,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
